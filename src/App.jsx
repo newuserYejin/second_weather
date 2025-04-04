@@ -54,12 +54,12 @@ function App() {
         <div className="innerBox">
           {/* 날씨 박스 */}
           <div className="weatherBox">
-            <div>{data.name}</div>
+            <div>{data?.name}</div>
             <div>
-              {(((data.main.temp - 32) * 5) / 9).toFixed(1)} &#8451; /{" "}
-              {data.main.temp}&#8457;
+              {(((data?.main.temp - 32) * 5) / 9).toFixed(1)} &#8451; /{" "}
+              {data?.main.temp}&#8457;
             </div>
-            <div>{data.weather[0].main}</div>
+            <div>{data?.weather[0].main}</div>
           </div>
 
           {/* 버튼 박스 */}
