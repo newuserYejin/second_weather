@@ -54,7 +54,26 @@
         flex: 0.2;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.9);
-        border-radius: 10px;
-        color: yellow;
+        border-radius: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        button {
+            background: none;
+            border: solid 1.6px #f0f3bd;
+            color: #f0f3bd;
+        }
+
+        button:hover {
+            background-color: #f0f3bd;
+            color: black;
+        }
+
+        button:focus-visible {
+            outline: none;
+        }
     }
 }

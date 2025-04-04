@@ -63,7 +63,13 @@ function App() {
           </div>
 
           {/* 버튼 박스 */}
-          <div className="btnBox">afdasd</div>
+          <div className="btnBox">
+            <button>Current Location</button>
+            <button>Paris</button>
+            <button>New york</button>
+            <button>Seoul</button>
+            <button>Japan</button>
+          </div>
         </div>
       </div>
     </>
