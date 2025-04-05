@@ -65,6 +65,7 @@
             background: none;
             border: solid 1.6px #f0f3bd;
             color: #f0f3bd;
+            padding: 10px;
         }
 
         button:hover {
@@ -75,5 +76,40 @@
         button:focus-visible {
             outline: none;
         }
+
+        .selected {
+            background-color: #f0f3bd;
+            color: black;
+        }
     }
+
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+    .wholeContainer {
+
+        .weatherBox {
+            >div:nth-child(2) {
+                font-size: 1.5em;
+            }
+
+            >div:nth-child(3) {
+                font-size: 1.3em;
+            }
+        }
+
+        .btnBox {
+            row-gap: 0px;
+            padding: 10px 0;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+
+            button {
+                padding: 5px 10px;
+                font-size: 0.8em;
+            }
+        }
+    }
+
 }
