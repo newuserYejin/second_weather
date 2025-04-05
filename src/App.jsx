@@ -10,7 +10,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   async function getWeatherDataLocation(lat, lon) {
-    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e7056fa76f6a6b7d8be7d23179c66858`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=e7056fa76f6a6b7d8be7d23179c66858&units=imperial`;
     setLoading(true);
     const response = await fetch(url);
     let data = await response.json();
@@ -57,7 +57,7 @@ function App() {
   }, [selectCity]);
 
   async function getWeatherDataCity() {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${selectCity}&appid=e7056fa76f6a6b7d8be7d23179c66858&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${selectCity}&appid=e7056fa76f6a6b7d8be7d23179c66858&units=imperial`;
     setLoading(true);
     const response = await fetch(url);
     let data = await response.json();
